@@ -1,21 +1,32 @@
 {
-  "name": "auth",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Trend20/UserAuthentication.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Trend20/UserAuthentication/issues"
-  },
-  "homepage": "https://github.com/Trend20/UserAuthentication#readme"
+    "name": "auth",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Trend20/UserAuthentication.git"
+    },
+    "keywords": [],
+    "author": "devenock",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Trend20/UserAuthentication/issues"
+    },
+    "homepage": "https://github.com/Trend20/UserAuthentication#readme",
+    "dependencies": {
+        "bcrypt": "^5.0.0",
+        "body-parser": "^1.19.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "mysql2": "^2.2.5",
+        "nodemon": "^2.0.5",
+        "sequelize": "^6.3.5",
+        "sequelize-cli": "^6.2.0"
+    }
 }

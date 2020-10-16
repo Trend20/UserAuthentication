@@ -32,7 +32,8 @@ accountRoutes.post('/register', function(req, res) {
 
     matched_users_promise.then(function(users) {
         if (users.length == 0) {
-            bcrypt.hashSync(req.body.password, 10);
+            const passwordHash =
+                bcrypt.hashSync(req.body.password, 10);
             models.User.create({
                 username: req.body.username,
                 email: req.body.email,
